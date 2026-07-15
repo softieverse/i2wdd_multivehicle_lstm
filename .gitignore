@@ -1,0 +1,11 @@
+venv/
+__pycache__/
+*.pyc
+.env
+data/i2wdd_raw/*
+data/synthetic/*
+!data/i2wdd_raw/.gitkeep
+!data/synthetic/.gitkeep
+sumo_sim/*.xml.bak
+*.rou.alt.xml
+.DS_Store
