@@ -9,3 +9,15 @@ data/synthetic/*
 sumo_sim/*.xml.bak
 *.rou.alt.xml
 .DS_Store
+data/hetrod_windows/
+data/processed/
+data/sumo/routes/
+data/sumo/fcd.xml
+data/sumo/*.rou.xml
+data/sumo/*.trips.xml
+data/sumo/hyd.osm
+data/sumo/hyd.net.xml
+runs/
+*.zip
+*.bak
+hetrod_sanity.png

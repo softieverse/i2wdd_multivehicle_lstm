@@ -1,0 +1,5 @@
+<additional>
+<vType id="moto" vClass="motorcycle" length="2.0" width="0.8" maxSpeed="18" accel="3.5" decel="5" sigma="0.7" latAlignment="arbitrary" minGapLat="0.1"/>
+<vType id="car" vClass="passenger" length="4.5" width="1.8" maxSpeed="16" accel="2.5" decel="4.5" sigma="0.5"/>
+<vType id="bus" vClass="bus" length="10" width="2.5" maxSpeed="12" accel="1.2" decel="4" sigma="0.4"/>
+</additional>

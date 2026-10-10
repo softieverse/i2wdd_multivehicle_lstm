@@ -1,0 +1,9 @@
+<configuration>
+<input>
+<net-file value="hyd.net.xml"/>
+<route-files value="moto.rou.xml,car.rou.xml,bus.rou.xml"/>
+</input>
+<time><begin value="0"/><end value="300"/><step-length value="0.2"/></time>
+<processing><lateral-resolution value="0.8"/></processing>
+<output><fcd-output value="fcd.xml"/><fcd-output.geo value="true"/></output>
+</configuration>

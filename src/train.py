@@ -41,7 +41,7 @@ CHECKPOINT_PATH = Path("~/lstm-trajectory-imputation/checkpoints/model.pt").expa
 WINDOW_SIZE = 50
 STRIDE = 25
 MASK_STRATEGY = "contiguous"  # "contiguous" or "random"
-MASK_RATIO = 0.2  # fraction of each window's GPS points to mask
+MASK_RATIO = 0.2  # fraction of each window's GPS points to mask\\
 MIN_GAP_LEN = 5    # contiguous mode: min consecutive masked points per gap
 MAX_GAP_LEN = 15   # contiguous mode: max consecutive masked points per gap
 
