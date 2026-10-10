@@ -17,10 +17,10 @@ def load_sumo_tracks(root="data/sumo/routes", hz=HZ):
         t = (t - pd.Timestamp("1970-01-01", tz="UTC")).dt.total_seconds().to_numpy()
         xy = latlon_to_xy(d["GPS (Lat.) [deg]"].to_numpy(), d["GPS (Long.) [deg]"].to_numpy())
         kind = name.split("_")[-1].rstrip("0123456789")      # moto / car / bus
-        agent = AGENT["two_wheeler"] if kind == "moto" else AGENT["car"]  # bus -> car
+        agent = 1 if kind == "moto" else 0   # common_schema: vehicle 0, two_wheeler 1
         tr = Track(xy.astype(np.float32), t, agent, SUMO_DS, name)
         for seg in segment_on_jumps(tr, max_dt=0.5):
             seg = resample(seg, hz)
-            if len(seg.t) >= int(WIN_S * hz):                # keep only tracks that fit a 10 s window
+            if len(seg.t) >= 30:                # keep only tracks that fit a 10 s window
                 out.append(seg)
     return out
